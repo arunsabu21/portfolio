@@ -182,7 +182,7 @@ nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  border: 4px solid #fff; /* clean inner border */
+  border: 4px solid #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -198,10 +198,10 @@ nav a:hover {
   }
 }
 
-/* Mobile responsiveness */
+
 @media screen and (max-width: 768px) {
   .hero {
-    flex-direction: column; /* stack text + photo vertically */
+    flex-direction: column; 
     align-items: center;
     padding: 40px 20px;
     gap: 8px;
@@ -218,11 +218,11 @@ nav a:hover {
   }
 
   .hero-text h2 {
-    font-size: 26px; /* smaller heading */
+    font-size: 26px;
   }
 
   .hero-text p {
-    font-size: 14px; /* smaller paragraph */
+    font-size: 14px;
   }
 
   .hero-photo img {
@@ -236,7 +236,7 @@ nav a:hover {
   }
 }
 
-/* Extra small screens (mobile portrait) */
+
 @media screen and (max-width: 480px) {
   .hero-text h2 {
     font-size: 22px;
@@ -253,7 +253,7 @@ nav a:hover {
 }
 
 #typed-text {
-  border-right: 2px solid #1abc9c; /* cursor */
+  border-right: 2px solid #1abc9c; 
   padding-right: 2px;
   white-space: nowrap;
   overflow: hidden;
@@ -305,22 +305,22 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
   .about-container {
-    padding: 40px 20px; /* smaller padding */
+    padding: 40px 20px;
     border-radius: 8px;
   }
 
   .about-container h2 {
-    font-size: 24px; /* slightly smaller heading */
+    font-size: 24px;
     margin-bottom: 16px;
   }
 
   .about-container p {
-    font-size: 15px; /* slightly smaller paragraph */
+    font-size: 15px; 
     line-height: 1.6;
   }
 }
 
-/* Extra small screens (mobile portrait) */
+
 @media screen and (max-width: 480px) {
   .about-container {
     padding: 30px 15px;
@@ -464,10 +464,10 @@ nav a:hover {
   color: #fff;
 }
 
-/* 📱 Mobile Responsive */
+
 @media (max-width: 600px) {
   .projects-container {
-    padding: 40px 20px; /* reduce padding */
+    padding: 40px 20px; 
   }
 
   .projects-container h2 {
@@ -476,7 +476,7 @@ nav a:hover {
   }
 
   .project-card {
-    padding: 16px; /* tighter spacing */
+    padding: 16px; 
   }
 
   .project-info h3 {
@@ -551,7 +551,7 @@ nav a:hover {
   transform: translateY(-6px);
 }
 
-/* 📱 Mobile Responsive */
+
 @media (max-width: 600px) {
   .contact-info {
     grid-template-columns: 1fr;
@@ -626,7 +626,7 @@ footer {
   }
 }
 
-/* Education & Internship Section Common Styles */
+
 .education-container,
 .internship-container {
   max-width: 900px;
@@ -648,7 +648,7 @@ footer {
   color: #282c3f;
 }
 
-/* Grids */
+
 .education-grid,
 .internship-grid {
   display: grid;
@@ -656,7 +656,7 @@ footer {
   gap: 20px;
 }
 
-/* Card Styles */
+
 .education-card,
 .internship-card {
   border: 1px solid #d4d4d5;
@@ -687,7 +687,7 @@ footer {
   line-height: 1.5;
 }
 
-/* Education Logo */
+
 .edu-logo {
   padding: 6px;
   border-radius: 50%;
@@ -704,7 +704,7 @@ footer {
   border: 4px solid #fff;
 }
 
-/* Download CV Button */
+
 .download-cv {
   text-align: center;
   margin-bottom: 60px;
@@ -727,7 +727,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* Responsive */
+
 @media screen and (max-width: 768px) {
   .education-container,
   .internship-container {
@@ -777,13 +777,13 @@ footer {
   color: #1abc9c;
 }
 
-/* 🌙 Dark mode base */
+
 body.dark-mode {
   background-color: #1e1e1e;
   color: #f1f1f1;
 }
 
-/* Containers and cards */
+
 body.dark-mode header,
 body.dark-mode .hero,
 body.dark-mode .about-container,
@@ -797,7 +797,7 @@ body.dark-mode .certificate-card {
   background: #2a2a2a;
   color: #f1f1f1;
   border-color: #444;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* darker shadows */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
 }
 
 body.dark-mode h1,
@@ -844,7 +844,7 @@ body.dark-mode .certificate-card:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
 }
 
-/* Footer */
+
 body.dark-mode .footer-links a {
   color: #1abc9c;
 }
