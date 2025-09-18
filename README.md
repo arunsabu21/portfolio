@@ -35,14 +35,6 @@ You can view the live site at: (https://arunsabu21.github.io/portfolio/)
 - `script.js` — JavaScript functionality
 - `assets/` — Images and other assets
 
-## Contributing
-
-Pull requests are welcome! Feel free to open issues or suggest improvements.
-
-## License
-
-[Add your preferred license here.]
-
 ---
 
 **Created by [arunsabu21](https://github.com/arunsabu21)**
