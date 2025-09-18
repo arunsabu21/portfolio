@@ -5,7 +5,7 @@ This repository contains the source code for my online portfolio, showcasing my 
 
 ## Demo
 
-You can view the live site at: [GitHub Pages link here] (add your deployment link if available).
+You can view the live site at: (https://arunsabu21.github.io/portfolio/) 
 
 ## Features
 
