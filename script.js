@@ -1,9 +1,8 @@
-const text = "Arun Sabu 👋"; // text with emoji
+const text = "Arun Sabu 👋"; 
 const typedText = document.getElementById("typed-text");
 let index = 0;
 let speed = 150;
 
-// Split string into array of characters correctly (handles emoji)
 const chars = Array.from(text);
 
 function typeWriter() {
@@ -21,7 +20,7 @@ function revealOnScroll() {
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 100; // adjust for earlier/later trigger
+    const elementVisible = 100; 
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -47,7 +46,6 @@ const body = document.body;
 darkToggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
 
-  // Switch icon between moon 🌙 and sun ☀️
   const icon = darkToggle.querySelector("i");
   if (body.classList.contains("dark-mode")) {
     icon.classList.remove("fa-moon");
@@ -57,3 +55,17 @@ darkToggle.addEventListener("click", () => {
     icon.classList.add("fa-moon");
   }
 });
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  loader.style.display = "flex";
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500); 
+  }, 5000); 
+});
+
