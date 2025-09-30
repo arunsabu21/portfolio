@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <title>Arun Sabu | Portfolio</title>
+    <title>Arun Sabu | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,352 +15,502 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+     <!-- Header  -->
     <header>
-      <h1>Portfolio</h1>
+      <h1>Arun Sabu</h1>
       <nav>
-        <div class="dark-toggle" id="dark-toggle">
-          <i class="fas fa-moon"></i>
-        </div>
         <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="bx bx-grid-alt"></i>
         </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <span class="close-menu" id="closeMenu"><i class="bx bx-x"></i></span>
+
+          <div class="menu-grid">
+            <a href="#home"><i class="bx bx-home"></i><span>Home</span></a>
+            <a href="#projects"
+              ><i class="bx bx-briefcase"></i><span>Projects</span></a
+            >
+            <a href="#about"><i class="bx bx-user"></i><span>What I Do</span></a>
+            <a href="#contact"
+              ><i class="bx bx-envelope"></i><span>Contact</span></a
+            >
+            <a href="#skills"
+              ><i class="bx bx-code-alt"></i><span>Skills</span></a
+            >
+          </div>
+        </div>
+
         <div class="nav-links" id="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
           <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+        </div>
+        <div class="dark-toggle" id="dark-toggle">
+          <i class="bx bx-moon"></i>
         </div>
       </nav>
     </header>
-
-    <section class="hero">
-      <div class="cover-photo"></div>
-      <div class="profile-info">
-        <img
-          src="assets/arun-sabu.jpg"
-          alt="Profile Photo"
-          class="profile-pic"
-        />
-        <h1>
-          Arun Sabu
-          <span class="verify">
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero section" id="home">
+        <div class="hero-container container grid">
+          <div class="social-link">
+            <a
+              href="https://linkedin.com/in/arunsabu21"
+              target="_blank"
+              class="social-links-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/arunsabu21"
+              target="_blank"
+              class="social-links-icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="#contact"
+              class="social-links-icon"
+            >
+              <i class="fas fa-pen"></i>
+            </a>
+          </div>
+          <div class="hero-data">
+            <h1>Hi👋, I'm Arun Sabu</h1>
+            <h2 class="typewriter" id="typewriter"></h2>
+            <p>
+              I am a passionate Full-Stack Developer with a strong focus on
+              building modern, responsive, and user-friendly web applications.
+              With expertise in Python, Django, and Flask, I specialize in
+              creating scalable and efficient solutions that solve real-world
+              problems. I enjoy crafting seamless user experiences, writing
+              clean and maintainable code, and continuously exploring new
+              technologies to enhance my skill set. My projects reflect a
+              balance of creativity and functionality, combining modern design
+              principles with robust backend development. Driven by curiosity
+              and a desire to innovate, I strive to turn ideas into meaningful
+              digital experiences that make an impact for users and businesses
+              alike.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-primary">Contact Me</a>
+              <a href="assets/Arun__Sabu__Resume.pdf" download class="btn-outline"
+                >Download CV</a
+              >
+            </div>
+            <a href="#services" class="scroll-down">
+              <span class="mouse">
+                <span class="wheel"></span>
+              </span>
+              <span class="arrow">&#8595;</span>
+            </a>
+          </div>
+          <div class="hero-img">
             <svg
-              viewBox="0 0 24 24"
-              fill="none"
+              class="home_blob"
+              width="350"
+              height="350"
+              viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M21.5609 10.7386L20.2009 9.15859C19.9409 8.85859 19.7309 8.29859 19.7309 7.89859V6.19859C19.7309 5.13859 18.8609 4.26859 17.8009 4.26859H16.1009C15.7109 4.26859 15.1409 4.05859 14.8409 3.79859L13.2609 2.43859C12.5709 1.84859 11.4409 1.84859 10.7409 2.43859L9.17086 3.80859C8.87086 4.05859 8.30086 4.26859 7.91086 4.26859H6.18086C5.12086 4.26859 4.25086 5.13859 4.25086 6.19859V7.90859C4.25086 8.29859 4.04086 8.85859 3.79086 9.15859L2.44086 10.7486C1.86086 11.4386 1.86086 12.5586 2.44086 13.2486L3.79086 14.8386C4.04086 15.1386 4.25086 15.6986 4.25086 16.0886V17.7986C4.25086 18.8586 5.12086 19.7286 6.18086 19.7286H7.91086C8.30086 19.7286 8.87086 19.9386 9.17086 20.1986L10.7509 21.5586C11.4409 22.1486 12.5709 22.1486 13.2709 21.5586L14.8509 20.1986C15.1509 19.9386 15.7109 19.7286 16.1109 19.7286H17.8109C18.8709 19.7286 19.7409 18.8586 19.7409 17.7986V16.0986C19.7409 15.7086 19.9509 15.1386 20.2109 14.8386L21.5709 13.2586C22.1509 12.5686 22.1509 11.4286 21.5609 10.7386ZM16.1609 10.1086L11.3309 14.9386C11.1909 15.0786 11.0009 15.1586 10.8009 15.1586C10.6009 15.1586 10.4109 15.0786 10.2709 14.9386L7.85086 12.5186C7.56086 12.2286 7.56086 11.7486 7.85086 11.4586C8.14086 11.1686 8.62086 11.1686 8.91086 11.4586L10.8009 13.3486L15.1009 9.04859C15.3909 8.75859 15.8709 8.75859 16.1609 9.04859C16.4509 9.33859 16.4509 9.81859 16.1609 10.1086Z"
-                fill="#1abc9c"
-              />
+              <defs>
+                <mask id="mask0" maskUnits="userSpaceOnUse">
+                  <path
+                    fill="white"
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+              </defs>
+
+              <g mask="url(#mask0)">
+                <path
+                  fill="#00bcd4"
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+                <image
+                  href="assets/arun-sabu.jpg"
+                  x="0"
+                  y="0"
+                  width="200"
+                  height="200"
+                  preserveAspectRatio="xMidYMid slice"
+                />
+              </g>
             </svg>
-          </span>
-        </h1>
-
-        <h2>Full-Stack Developer | Python | Django</h2>
-        <p>Building scalable web apps with modern technologies</p>
-        <div class="buttons">
-          <a href="#contact" class="btn-primary">Contact</a>
-          <a href="assets/resume_arun_sabu.pdf" download class="btn-outline"
-            >Download CV</a
-          >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- End Hero Section -->
 
-    <section id="about" class="reveal">
-      <div class="about-container">
-        <h2>About Me</h2>
-        <p>
-          I'm <strong>Arun Sabu</strong>, a Full Stack Python Developer with
-          experience in Django, Flask, HTML, CSS, JavaScript, and SQL. I enjoy
-          building functional web applications and continuously learning new
-          technologies to improve my skills.
+      <!-- Service Section -->
+      <section class="services section" id="services">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">
+          My core duties as a Python Full-Stack Developer
         </p>
-      </div>
-    </section>
 
-    <section class="education-container" id="education">
-      <h2>Education</h2>
-      <div class="education-grid">
-        <div class="education-card">
-          <div class="edu-logo">
-            <img src="assets/mg-logo.png" alt="MG University Logo" />
+        <div class="services-container">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <i class="fas fa-code service-icon"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and modern web applications using HTML, CSS,
+              JavaScript, and frameworks like React.
+            </p>
           </div>
-          <h3>Mahatma Gandhi University, Kerala, India</h3>
-          <p>B.Com (Computer Applications) | 2021 - 2024</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="internship-container" id="internship">
-      <h2>Internship</h2>
-      <div class="internship-grid">
-        <div class="internship-card">
-          <h3>Jr. Full Stack Python Developer (Intern)</h3>
-          <p>
-            Soften Technologies | Kochi, Kerala, India | Sep 2024 - Feb 2025
-          </p>
-          <p>
-            Worked on Django & Flask projects, implemented responsive UIs, and
-            integrated APIs.
-          </p>
-        </div>
-      </div>
-    </section>
-    <div class="download-cv">
-      <a href="assets/resume_arun_sabu.pdf" download class="btn-download"
-        >Download CV</a
-      >
-    </div>
+          <!-- Service 2 -->
+          <div class="service-card">
+            <i class="fas fa-database service-icon"></i>
+            <h3>Backend Development</h3>
+            <p>
+              Developing scalable backends and REST APIs with Python, Django,
+              and Flask for seamless performance.
+            </p>
+          </div>
 
-    <section id="skills" class="reveal">
-      <div class="skills-container">
-        <h2>Skills & Tools</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-              alt="Python"
-            />
-            <p>Python</p>
+          <!-- Service 3 -->
+          <div class="service-card">
+            <i class="fas fa-cogs service-icon"></i>
+            <h3>API Integration</h3>
+            <p>
+              Connecting third-party services and creating secure API
+              integrations to extend application functionality.
+            </p>
           </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-              alt="Django"
-            />
-            <p>Django</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-              alt="Flask"
-            />
-            <p>Flask</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML"
-            />
-            <p>HTML</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="CSS"
-            />
-            <p>CSS</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-            />
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              alt="SQL"
-            />
-            <p>SQL</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="Git"
-            />
-            <p>Git</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt="Bootstrap"
-            />
-            <p>Bootstrap</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub"
-            />
-            <p>GitHub</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-              alt="VS Code"
-            />
-            <p>VS Code</p>
-          </div>
-          <div class="skill-card">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"
-              alt="PyCharm"
-            />
-            <p>PyCharm</p>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <i class="fas fa-tools service-icon"></i>
+            <h3>Database & ORM</h3>
+            <p>
+              Designing and managing relational databases with PostgreSQL,
+              MySQL, and Django ORM for clean data handling.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="reveal">
-      <div class="projects-container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-info">
-              <h3>To-Do App</h3>
-              <p>
-                A full-stack To-Do app built with Django, SQLite, HTML, CSS, and
-                JavaScript.
-              </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/arunsabu21/smart-todo.git"
-                  target="_blank"
-                  >GitHub</a
-                >
+      <!-- Service Section End -->
+
+      <!-- Edu and Exp Section -->
+
+      <section class="qualification section" id="qualification">
+        <div class="tabs-container">
+          <!-- Tabs -->
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="education">
+              <i class="fas fa-graduation-cap"></i>
+              Education
+            </button>
+            <button class="tab-btn" data-tab="work">
+              <i class="fas fa-briefcase"></i>
+              Work Experience
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- Education -->
+            <div class="tab-panel active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3>B.Com Computer Applications</h3>
+                  <span>Mahatma Gandhi University, Kerala (2021 - 2024)</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="project-card">
-            <div class="project-info">
-              <h3>Portfolio Website</h3>
-              <p>
-                My personal responsive portfolio showcasing skills, projects,
-                and resume.
-              </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/arunsabu21/portfolio.git"
-                  target="_blank"
-                  >GitHub</a
-                >
+
+            <!-- Work -->
+            <div class="tab-panel" id="work">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3>Jr. Full-Stack Developer (Intern)</h3>
+                  <span
+                    >Soften Technologies, Kochi, Kerala (Sep 2024 - Feb 2025)</span
+                  >
+                  <p>
+                    Building full-stack applications using Python, Django,
+                    Flask, and modern frontend frameworks.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="certificates" class="reveal">
-      <div class="certificates-container">
-        <h2>Certifications</h2>
-        <div class="certificates-grid">
-          <div class="certificate-card">
-            <i class="fas fa-certificate"></i>
-            <h3>Career Essentials in Software Development</h3>
-            <p>Certifying organizations: Microsoft & LinkedIn</p>
-            <a
-              href="https://www.linkedin.com/learning/certificates/1ca532c56cf9a877e9679da2d2abcde0306408abcd2f3ccb4a477d5d5433bf95"
-              target="_blank"
-              class="btn"
-              >View Certificate</a
-            >
+      <!-- End Section -->
+
+      <!-- Skills Section -->
+
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills & Tools</h2>
+        <p class="section-subtitle">What I bring to the table</p>
+
+        <div class="skills-container">
+          <!-- Tabs -->
+          <div class="skills-tabs">
+            <button class="skills-tab active" data-tab="frontend">
+              <i class="fas fa-code"></i> Frontend
+            </button>
+            <button class="skills-tab" data-tab="backend">
+              <i class="fas fa-server"></i> Backend
+            </button>
+            <button class="skills-tab" data-tab="other">
+              <i class="fas fa-tools"></i> Other Tech
+            </button>
+            <button class="skills-tab" data-tab="soft">
+              <i class="fas fa-user-astronaut"></i> Soft Skills
+            </button>
           </div>
 
-          <div class="certificate-card">
-            <i class="fas fa-certificate"></i>
-            <h3>Career Essentials in Generative AI</h3>
-            <p>Certifying organizations: Microsoft & LinkedIn</p>
-            <a
-              href="https://www.linkedin.com/learning/certificates/95c1eb30f780e21e1a4a8022c3d82aa1e1327b7866af2ba3b8e8f87f4a703932"
-              target="_blank"
-              class="btn"
-              >View Certificate</a
-            >
-          </div>
+          <!-- Content Panels -->
+          <div class="skills-content">
+            <!-- Frontend -->
+            <div class="skills-panel active" id="frontend">
+              <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt"></i> CSS3
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-js"></i> JavaScript
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-bootstrap"></i> Bootstrap
+                </div>
+              </div>
+            </div>
 
-          <div class="certificate-card">
-            <i class="fas fa-certificate"></i>
-            <h3>Python Full Stack Development Course Completion</h3>
-            <p>Soften Technologies</p>
+            <!-- Backend -->
+            <div class="skills-panel" id="backend">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-python"></i> Python
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-leaf"></i> Django & Flask
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-database"></i> MySQL, PostgreSQL, SQLite
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-plug"></i> REST API
+                </div>
+              </div>
+            </div>
+
+            <!-- Other -->
+            <div class="skills-panel" id="other">
+              <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="skill-card">
+                  <i class="fab fa-github"></i> GitHub
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-code-branch"></i> VS Code
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-panel" id="soft">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fas fa-lightbulb"></i> Problem Solving
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-comments"></i> Communication
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-users"></i> Teamwork
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-bolt"></i> Adaptability
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- End Skills Section -->
 
-    <section id="contact" class="reveal">
-      <div class="contact-container">
-        <h2>Contact Me</h2>
-        <p>Let’s connect! You can reach me anytime.</p>
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:sabuarun00@gmail.com">sabuarun00@gmail.com</a>
+      <!-- Project Section -->
+
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Some of my recent work</h2>
+
+        <div class="swiper project-slider">
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div class="swiper-slide project-item">
+              <div class="project-content">
+                <div class="project-image">
+                  <img src="assets/project-one.png" alt="Project 1 Mockup" />
+                </div>
+
+                <!-- Right side (Texts) -->
+                <div class="project-info">
+                  <h3>Personal Portfolio Website</h3>
+                  <p>
+                    Designed and developed my personal portfolio website to
+                    showcase skills, projects, and experience with a modern
+                    responsive UI and dark mode support.
+                  </p>
+                  <a
+                    href="https://github.com/arunsabu21/portfolio.git"
+                    target="_blank"
+                    class="btn"
+                    >See Repository
+                    <span><i class="fas fa-external-link-alt"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="swiper-slide project-item">
+              <div class="project-content">
+                <div class="project-image">
+                  <img src="assets/project-two.png" alt="Project 2 Mockup" />
+                </div>
+
+                <div class="project-info">
+                  <h3>Smart ToDo</h3>
+                  <p>
+                    A minimal and intelligent ToDo app built with Flask +
+                    SQLite, featuring a stylish UI, dark mode, smart
+                    suggestions, and modern mobile-first design.
+                  </p>
+                  <a
+                    href="https://github.com/arunsabu21/smart-todo.git"
+                    target="_blank"
+                    class="btn"
+                    >See Repository
+                    <span><i class="fas fa-external-link-alt"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+919745611924">+91 9745611924</a>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/arunsabu21" target="_blank"
-              >LinkedIn</a
-            >
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/arunsabu21" target="_blank">GitHub</a>
+
+          <div class="project-slider-controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
+      </section>
+
+      <!-- End Project Section -->
+
+      <!-- Contact Section -->
+
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I’m always open to discuss projects, collaborations, or just a
+              friendly hello. Reach out using the info below or the form.
+            </p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>arunsabu6124@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Kerala, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: form -->
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xnngdgoe" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <footer class="footer">
       <div class="footer-container">
-        <p>&copy; 2025 Arun Sabu. All rights reserved.</p>
+        <!-- Left: Name + Profession -->
+        <div class="footer-left">
+          <h3>Arun Sabu</h3>
+          <p>Full-Stack Developer</p>
+        </div>
 
-        <div class="footer-links">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+        <!-- Center: social icons -->
+        <div class="footer-center">
+          <a href="https://github.com/arunsabu21" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/arunsabu21" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#contact"><i class="fas fa-pen"></i></a>
+        </div>
+
+        <!-- Right: quick links -->
+        <div class="footer-right">
+          <a href="#Home">Home</a>
+          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
+      </div>
 
-        <div class="footer-socials">
-          <a
-            href="https://www.linkedin.com/in/arunsabu21"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
-              alt="LinkedIn"
-              class="social-icon"
-            />
-          </a>
-          <a
-            href="https://github.com/arunsabu21"
-            target="_blank"
-            aria-label="GitHub"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
-              alt="GitHub"
-              class="social-icon"
-            />
-          </a>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Arun Sabu. All rights reserved.</p>
       </div>
     </footer>
-    <div class="loader-animation-container" id="loader" style="display: none">
-      <div class="spinner-container">
-        <div class="my-spinner">
-          <svg class="circle-loader" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-          </svg>
-        </div>
-      </div>
-    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollUp">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
